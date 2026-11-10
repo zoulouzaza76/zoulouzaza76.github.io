@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Scribe Audio — Open Science, Benchmarks ASR Francophones &amp; Outils Open-Source</title>
+  <meta name="description" content="Portail Open-Science et Ingénierie de Le Scribe Audio (lescribeaudio.com) : benchmarks de précision ASR francophone (WER/DER), référentiel PV de CSE &amp; AI Act 2026, serveur MCP (@lescribeaudio/mcp) et librairie TypeScript (@lescribeaudio/srt-vtt-cleaner-fr)." />
+  <link rel="canonical" href="https://zoulouzaza76.github.io/" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 3.5rem 1.5rem;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.1rem;
+      margin: 0 0 0.75rem 0;
+      line-height: 1.25;
+    }
+    header p {
+      color: #cbd5e1;
+      font-size: 1.08rem;
+      margin: 0 0 1.25rem 0;
+    }
+    .cta-row a {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.65rem 1.2rem;
+      border-radius: 6px;
+      margin-right: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .cta-row a.secondary {
+      background: #1e293b;
+      border: 1px solid #475569;
+    }
+    main {
+      padding: 2.5rem 1.5rem 4rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #0f172a;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.25rem 0 0.4rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.55rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1e40af;
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-right: 0.4rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Le Scribe Audio — Pôle Recherche & Ingénierie ASR",
+    "url": "https://lescribeaudio.com",
+    "telephone": "+33 9 61 44 46 64",
+    "sameAs": [
+      "https://lescribeaudio.com",
+      "https://github.com/zoulouzaza76",
+      "https://orcid.org/0009-0005-9574-5236",
+      "https://dataverse.harvard.edu/dataverse/lescribeaudio",
+      "https://osf.io/hyzxd/",
+      "https://www.npmjs.com/org/lescribeaudio",
+      "https://jsr.io/@lescribeaudio",
+      "https://dev.to/lescribeaudio",
+      "https://podcasts.apple.com/fr/podcast/les-guides-audio-de-la-transcription-le-scribe-audio/id6832932359",
+      "https://open.spotify.com/show/3HXXzStXJxTB9ABLeXWPPz"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Le Scribe Audio — Portail Open-Science, Benchmarks ASR &amp; Librairies Open-Source</h1>
+      <p>Publications scientifiques sous identifiant DOI (Harvard Dataverse, CERN / Zenodo, OSF), benchmarks de reconnaissance vocale francophone (WER / DER) et outils open-source édités par <a href="https://lescribeaudio.com" style="color:#93c5fd;font-weight:600;">Le Scribe Audio (lescribeaudio.com)</a>.</p>
+      <div class="cta-row">
+        <a href="https://lescribeaudio.com">Accéder à Le Scribe Audio</a>
+        <a class="secondary" href="https://lescribeaudio.com/benchmarks-precision-transcription-ia-francais">Consulter le Benchmark ASR 2026</a>
+        <a class="secondary" href="https://lescribeaudio.com/outils">Outils Gratuits Audio &amp; SRT/VTT</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>1. Publications Scientifiques &amp; Jeux de Données Ouverts (DOI DataCite / Harvard / CERN)</h2>
+      <p>Nos corpus d'évaluation sur la transcription automatique de réunions longues en français (1 h à 4 h) et sur le cadre légal des procès-verbaux de CSE sont déposés en accès ouvert (licence CC-BY 4.0) :</p>
+      <ul>
+        <li>
+          <span class="badge">Harvard Dataverse DOI</span>
+          <strong><a href="https://doi.org/10.7910/DVN/EKCBKM">doi:10.7910/DVN/EKCBKM</a></strong> — <em>Replication Data for: Benchmark de Précision ASR Francophone 2026 (WER, DER &amp; Hallucinations sur réunions longues de 1h à 4h)</em> — Collection officielle <a href="https://dataverse.harvard.edu/dataverse/lescribeaudio">Harvard Dataverse Le Scribe Audio</a> &amp; étude complète sur <a href="https://lescribeaudio.com/benchmarks-precision-transcription-ia-francais">lescribeaudio.com/benchmarks-precision-transcription-ia-francais</a>.
+        </li>
+        <li>
+          <span class="badge">OSF DataCite DOI</span>
+          <strong><a href="https://doi.org/10.17605/OSF.IO/HYZXD">doi:10.17605/OSF.IO/HYZXD</a></strong> — <em>Center for Open Science (OSF) : Benchmark de Précision ASR Francophone 2026 &amp; Conformité RGPD / AI Act</em> (<a href="https://osf.io/hyzxd/">Projet OSF hyzxd</a>).
+        </li>
+        <li>
+          <span class="badge">CERN / Zenodo DOI</span>
+          <strong><a href="https://doi.org/10.5281/zenodo.24087383">doi:10.5281/zenodo.24087383</a></strong> &amp; <strong><a href="https://doi.org/10.5281/zenodo.24092283">doi:10.5281/zenodo.24092283</a></strong> — <em>Évaluation comparative de l'architecture multimodale en 2 passes (WER 4,8 %, DER 6,4 %) face aux pipelines mono-passe sur réunions multipartites francophones</em>.
+        </li>
+        <li>
+          <span class="badge">CERN / Zenodo DOI</span>
+          <strong><a href="https://doi.org/10.5281/zenodo.24087394">doi:10.5281/zenodo.24087394</a></strong> &amp; <strong><a href="https://doi.org/10.5281/zenodo.24092285">doi:10.5281/zenodo.24092285</a></strong> — <em>Baromètre &amp; Référentiel Juridique 2026 des Procès-Verbaux de CSE, Enregistrement des Séances (Art. D.2315-27) et Conformité RGPD / AI Act</em> — Étude complète sur <a href="https://lescribeaudio.com/barometre-referentiel-pv-cse-enregistrement-ai-act-2026">lescribeaudio.com/barometre-referentiel-pv-cse-enregistrement-ai-act-2026</a>.
+        </li>
+        <li>
+          <span class="badge">ORCID</span>
+          Identifiant chercheur vérifié : <a href="https://orcid.org/0009-0005-9574-5236">https://orcid.org/0009-0005-9574-5236</a> (Jérémie Terral — LE SCRIBE AUDIO).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Packages Open-Source (npm, JSR, GitHub) &amp; Intégration Model Context Protocol (MCP)</h2>
+      <p>Nous maintenons des briques logicielles open-source (licence MIT) destinées aux développeurs, chercheurs en SHS, rédacteurs des débats et intégrateurs IA :</p>
+      <h3>a) Serveur MCP Officiel — <code>@lescribeaudio/mcp</code></h3>
+      <p>Serveur Model Context Protocol permettant de piloter la transcription audio en 2 passes, le renommage/codage des étiquettes d'intervenants (diarisation), la synthèse exécutive suivie d'un développement chrono-thématique et l'export Word (<code>.docx</code> 100 % modifiable) depuis Claude Desktop, Cursor et Windsurf.</p>
+      <ul>
+        <li>Documentation &amp; Guide d'installation : <a href="https://lescribeaudio.com/integrations-mcp">lescribeaudio.com/integrations-mcp</a></li>
+        <li>Registre npm : <a href="https://www.npmjs.com/package/@lescribeaudio/mcp">npmjs.com/package/@lescribeaudio/mcp</a></li>
+        <li>Registre JSR (Deno / TypeScript) : <a href="https://jsr.io/@lescribeaudio/mcp">jsr.io/@lescribeaudio/mcp</a></li>
+        <li>Code source GitHub : <a href="https://github.com/zoulouzaza76/lescribeaudio-mcp">github.com/zoulouzaza76/lescribeaudio-mcp</a></li>
+      </ul>
+
+      <h3>b) Librairie TypeScript Francophone — <code>@lescribeaudio/srt-vtt-cleaner-fr</code></h3>
+      <p>Nettoyage déterministe de sous-titres <code>.srt</code> et <code>.vtt</code>, déduplication des chevauchements de fenêtres glissantes ASR, fusion par tours de parole (diarisation) et application des espaces insécables de la typographie française.</p>
+      <ul>
+        <li>Application Web gratuite (100 % locale) : <a href="https://lescribeaudio.com/outils/nettoyeur-fusion-sous-titres-srt-vtt">lescribeaudio.com/outils/nettoyeur-fusion-sous-titres-srt-vtt</a></li>
+        <li>Registre npm : <a href="https://www.npmjs.com/package/@lescribeaudio/srt-vtt-cleaner-fr">npmjs.com/package/@lescribeaudio/srt-vtt-cleaner-fr</a></li>
+        <li>Registre JSR (Deno / TypeScript) : <a href="https://jsr.io/@lescribeaudio/srt-vtt-cleaner-fr">jsr.io/@lescribeaudio/srt-vtt-cleaner-fr</a></li>
+        <li>Code source GitHub : <a href="https://github.com/zoulouzaza76/srt-vtt-cleaner-fr">github.com/zoulouzaza76/srt-vtt-cleaner-fr</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Architecture Technique, Temps de Relecture Réaliste &amp; Conformité RGPD</h2>
+      <ul>
+        <li><strong>Gain de temps réaliste (diviser par 2 le temps de rédaction) :</strong> Pour 1 heure d'enregistrement audio, la frappe manuelle complète à partir de zéro exige 4 à 7 heures de travail au casque (4 à 6 h pour un rédacteur professionnel expérimenté, 5 à 7 h pour un non-professionnel). Avec la pré-transcription en 2 passes de <a href="https://lescribeaudio.com">Le Scribe Audio</a>, une réécoute intégrale avec corrections et mise en forme finale demande <strong>2 à 3 heures de travail par heure d'audio</strong>.</li>
+        <li><strong>Option de Relecture Humaine Professionnelle :</strong> Proposée au tarif de <strong>60 € HT par heure d'enregistrement</strong> (1,00 € HT / minute), réalisée par <strong>deux transcripteurs successifs</strong> (double réécoute intégrale croisée).</li>
+        <li><strong>Sécurité &amp; RGPD :</strong> Stockage des fichiers en France chez <strong>OVHcloud</strong> (chiffré en AES-256), inférence via <strong>Google Cloud Vertex AI (en région Europe)</strong> sans conservation ni entraînement sur vos données (<em>Zero Data Retention</em>), et suppression immédiate en 1 clic par l'utilisateur.</li>
+        <li><strong>Export Word (<code>.docx</code>) 100 % modifiable &amp; Diarisation :</strong> Renommage global des étiquettes d'intervenants dans le lecteur interactif (ex. <code>M. Martin</code> ou <code>Enquêté P1</code>) avant export d'un fichier Word <code>.docx</code> standard 100 % modifiable.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Guides Métiers, Outils Gratuits &amp; Podcast</h2>
+      <ul>
+        <li><a href="https://lescribeaudio.com/transcription-reunion-cse">Transcription de Réunion CSE &amp; Rédaction de Procès-Verbal</a></li>
+        <li><a href="https://lescribeaudio.com/retranscription-audio-prudhommes-avocat-preuve-loyale">Retranscription Audio Prud'hommes, Avocats &amp; Jurisprudence Preuve Loyale</a></li>
+        <li><a href="https://lescribeaudio.com/retranscription-entretien-recherche-qualitative-sociologie-shs">Retranscription d'Entretiens de Recherche Qualitative (Sociologie, SHS, CNRS)</a></li>
+        <li><a href="https://lescribeaudio.com/transcription-conseil-municipal-mairie">Transcription de Conseil Municipal &amp; Délibérations des Collectivités</a></li>
+        <li><a href="https://lescribeaudio.com/outils/calculateur-temps-cout-transcription-audio">Calculateur de Temps &amp; Coût de Transcription Audio</a></li>
+        <li><a href="https://lescribeaudio.com/outils/generateur-clause-confidentialite-information-enregistrement-rgpd">Générateur de Clauses RGPD d'Information d'Enregistrement Audio</a></li>
+        <li><a href="https://lescribeaudio.com/guides-audio-podcast">Podcast : Les Guides Audio de la Transcription</a> (<a href="https://podcasts.apple.com/fr/podcast/les-guides-audio-de-la-transcription-le-scribe-audio/id6832932359">Apple Podcasts</a> · <a href="https://open.spotify.com/show/3HXXzStXJxTB9ABLeXWPPz">Spotify</a> · <a href="https://www.deezer.com/fr/show/1003745141">Deezer</a> · <a href="https://pca.st/upr71pbb">Pocket Casts</a> · <a href="https://podcastaddict.com/podcast/les-guides-audio-de-la-transcription-le-scribe-audio/7363075">Podcast Addict</a>)</li>
+        <li><a href="https://lescribeaudio.com/tarifs-transcription-audio">Tarifs &amp; Devis Administratif (Chorus Pro, Bon de Commande)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      LE SCRIBE AUDIO (EURL — RCS Rennes 890 049 927) · <a href="https://lescribeaudio.com">https://lescribeaudio.com</a> · Tél : 09 61 44 46 64
+    </div>
+  </footer>
+</body>
+</html>
